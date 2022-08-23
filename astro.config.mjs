@@ -6,5 +6,5 @@ import react from "@astrojs/react";
 export default defineConfig({
   integrations: [react()],
   output: 'server',
-  adapter: cloudflare(),
+  adapter: cloudflare({ mode: "directory" })
 });
